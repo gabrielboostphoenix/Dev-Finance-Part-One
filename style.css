@@ -1,0 +1,130 @@
+@charset "UTF-8";
+
+/* CSS VARIABLES */
+:root {
+    --dark-blue: #363F5F;
+}
+
+/* UNIVERSAL SELECTOR */
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/* ELEMENT/TAG SELECTORS */
+body {
+    background-color: #f0f2f5;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    background-color: #2D4A22;
+    padding: 2rem 0rem 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    margin-top: 3.2rem;
+    margin-bottom: 0.8rem;
+    color: var(--dark-blue);
+    font-weight: 400;
+}
+
+td.description {
+    color: var(--dark-blue);
+}
+
+td.income {
+    color: #12A454;
+}
+
+td.expense {
+    color: #E92929;
+}
+
+table tbody tr {
+    opacity: 0.7;
+}
+
+table tbody tr:hover {
+    opacity: 1;
+}
+
+table th {
+    background-color: white;
+    font-weight: normal;
+    padding: 1rem 2rem;
+    text-align: left;
+}
+
+table td {
+    background-color: white;
+    padding: 1rem 2rem;
+}
+
+table thead tr th:first-child, table tbody tr td:first-child {
+    border-radius: 0.25rem 0 0 0.25rem;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 0 2rem;
+    color: var(--dark-blue);
+    opacity: 0.6;
+}
+
+/* CLASS SELECTORS */
+.container {
+    width: min(90vw, 800px);
+    margin: auto;
+}
+
+.card {
+    background-color: white;
+    padding: 1.5rem 2rem;
+    border-radius: 0.25rem;
+    margin-bottom: 2rem;
+    color: var(--dark-blue);
+}
+
+.card h3 {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.card p {
+    font-size: 2rem;
+    line-height: 3rem;
+    margin-top: 1rem;
+}
+
+.card.total {
+    background-color: #49AA26;
+    color: white;
+}
+
+/* ID SELECTORS */
+#logo {
+    font-weight: 100;
+    color: #fff;
+}
+
+#balance {
+    margin-top: -8rem;
+}
+
+#balance h2 {
+    color: white;
+}
+
+#data-table {
+    width: 100%;
+    color: #969CB3;
+}
